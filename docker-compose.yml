@@ -4,7 +4,7 @@ services:
     image: evoapicloud/evolution-api:v2.3.6
     restart: always
     ports:
-      - "127.0.0.1:8081:8080"
+      - "8081:8080"
     volumes:
       - lab_evolution_instances:/lab_evolution/instances
     networks:
@@ -38,4 +38,5 @@ volumes:
 
 networks:
   lab_evolution:
+
     driver: bridge
